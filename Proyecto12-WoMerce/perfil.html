@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin APP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/56c7afe2d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NAVEGADOR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark px-2">
+        <img src="img/logo_panel.png" class="img-fluid navbar-brand">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="panel.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tienda</a>
+                    <div class="dropdown-menu" id="subMenu">
+                        <a href="categorias.html" class="dropdown-item">Categorias</a>
+                        <a href="productos.html" class="dropdown-item">Productos</a>
+                        <a href="inventario.html" class="dropdown-item">Inventario</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="pedidos.html" class="dropdown-item">Pedidos</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="cupones.html" class="dropdown-item">Cupones</a>
+                    </div>                    
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Administración</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="usuarios.html">Usuarios</a>
+                        <a class="dropdown-item" href="configuracion.html">Configuración</a>
+                        <a class="dropdown-item" href="roles.html">Roles</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="sistema.html">Sistema</a>
+                    </div>
+                </li>
+            </ul>
+            <form action="" class="mx-auto d-flex">
+                <input type="search" class="form-control me-sm-2" placeholder="Buscar">
+                <button class="btn btn-primary my-2 my-sm-0"><i class="fas fa-search"></i></button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Bienvenido Jose</a>
+                    <div class="dropdown-menu">
+                        <a href="perfil.html" class="dropdown-item"><i class="fas fa-user-circle"></i> Perfil</a>
+                        <a href="configuraciones.html" class="dropdown-item"><i class="fas fa-cog"></i> Configuraciones</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="fas fa-user-times"></i> Salir</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- LAYOUT PRINCIPAL -->
+    <div class="row mt-3 px-3">
+        <!-- LAYOUT DE 3 COLUMNAS -->
+        <div class="col-sm-12 col-md-3">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h4><i class="fas fa-align-justify"></i> Menú principal</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                            <a href="categorias.html" class="text-dark">Categorias</a>
+                            <span class="badge bg-light text-dark">10</span>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center active">
+                            <a href="productos.html" class="text-dark">Productos</a>
+                            <span class="badge bg-light text-dark">200</span>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                            <a href="inventario.html" class="text-dark">Inventario</a>
+                            <span class="badge bg-primary">500</span>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                            <a href="pedido.html" class="text-dark">Pedido</a>
+                            <span class="badge bg-primary">14</span>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+                            <a href="cupones.html" class="text-dark">Cupones</a>
+                            <span class="badge bg-primary">20</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-header bg-dark text-white">
+                    <h4><i class="fas fa-cog"></i> Administración</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-secondary">
+                            <a href="usuarios.html" class="text-dark">Usuarios</a>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary">
+                            <a href="configuracion.html" class="text-dark">Configuración</a>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary">
+                            <a href="roles.html" class="text-dark">Roles</a>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary">
+                            <a href="sistema.html" class="text-dark">Sistema</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- LAYOUT DE 6 COLUMNAS -->
+        <div class="col-sm-12 col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Editar perfil</h2>
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" value="Juan Vales">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" class="form-control" value="JuanVales@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Descripción</label>
+                            <textarea name="editor1" id="editor1" class="form-control">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, alias.
+                            </textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <h2>Imagen</h2>
+            <img src="img/avatar.png" class="img-fluid"/>
+            <button class="btn btn-primary my-2 w-100">Editar imagen</button><br>
+            <button class="btn btn-danger w-100">Borrar imagen</button>
+        </div>
+    </div>
+
+    <!-- SECCION FOOTER -->
+    <footer id="footer" class="bg-dark text-white mt-4 p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">
+                        2019 - Todos los derechos reservados &copy;
+                        <span>appCommerce</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="newCategory" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ingresar nuevo producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label class="form-label" for="">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Ingrese nombre del producto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Talla</label>
+                            <input type="text" class="form-control" placeholder="Ingrese talla del producto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Precio</label>
+                            <input type="number" class="form-control" placeholder="Ingrese precio del producto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Descripción</label>
+                            <textarea name="editor1" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary"><i class="fas fa-save"></i> Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <!-- CKEDITOR PARA LOS TEXTOS LARGOS -->
+    <script src="http://cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace("editor1");
+    </script>
+</body>
+</html>

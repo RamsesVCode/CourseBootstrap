@@ -1,0 +1,23 @@
+body{
+    font-size:1.2rem;
+}
+.fondo-nav{
+    background-color:#13151d !important;
+}
+#inicio{
+    background-image: url("../img/adults-analysis-banking-1451447.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-text{
+    /* width: 100%; */
+    padding-top: 300px !important;
+    height: 550px;
+    background-color: rgba(0,0,0,.5);
+}
+#banner{
+    background-color: #DF2176;
+}
+#contacto{
+    background-color: #DF2176;
+}
